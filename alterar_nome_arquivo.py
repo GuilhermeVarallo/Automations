@@ -1,7 +1,7 @@
 import os
 
-directory = r'C:\Users\gvara\Documents\Estudos\Automacoes'
+directory = r'caminho_do_arquivo'
 
 for filename in os.listdir(directory):
-    new_filename = '08/11/2024' + filename
+    new_filename = 'prefix___' + filename
     os.rename(os.path.join(directory, filename), os.path.join(directory,new_filename))
